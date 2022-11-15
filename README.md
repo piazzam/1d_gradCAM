@@ -15,7 +15,7 @@ where:
 * *testset* is the testset on which compute gradCAM.
 * *model* is the model to explain with gradCAM. It must be a keras model. 
 
-2. HeatMap computation:\
+2. HeatMap computation:
 ```python
 
 heatmap = gCam.make_gradcam_heatmap(conv_layer_name)
