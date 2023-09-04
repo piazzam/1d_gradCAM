@@ -25,8 +25,9 @@ where:
 * *conv_layer_name* is the name of the convolutional layer on which applies the gradCAM. It is the same obtaine with the summary function of Keras. 
 
 3. Interpolation:\
-It is possible to automatically interpolate the data to obtain the same dimension as the input feature. At the the moment there are two possible interpolation strategies: 
-* *cubic spline interpolation*
+It is possible to automatically interpolate the data to obtain the same dimension as the input feature. At the the moment there are three possible interpolation strategies: 
+* *cubic spline interpolation*, *linear interpolation* and *matrix interpolation*.
+For example the cubic spline interpolation is performed as follow:
   ```python
 
   interpolate_vector = gCam.cubic_spline_interpolation(vector, v_size, input_size)
