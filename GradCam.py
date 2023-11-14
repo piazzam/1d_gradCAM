@@ -3,6 +3,7 @@ import numpy as np
 from scipy.interpolate import CubicSpline
 from scipy.interpolate import interp1d
 
+
 class GradCam:
     """
     A class to compute grad-CAM on 1-D input for Keras models.
